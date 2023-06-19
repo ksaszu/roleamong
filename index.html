@@ -1,22 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Formularz kontaktowy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Formularz kontaktowy</h1>
-    <div>
-        <form action="mailto:ksaszu@gmail.com" method="post">
-            <label>Imię:</label>
-            <input type="text" name="name" placeholder="Wpisz swoje imię"><br>
-            <label>E-mail:</label>
-            <input type="email" name="email" placeholder="Wpisz swój e-mail"><br>
-            <label>Wiadomość:</label>
-            <textarea name="message" placeholder="Wpisz swoją wiadomość"></textarea><br>
-            <input type="submit" name="submit" value="Wyślij wiadomość">
-        </form>
-    </div>
-</body>
-</html>
 
+<head>
+  <title>Custom Roles in Among Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Custom Roles in Among Us</h1>
+
+    <input type="text" id="roleSearch" placeholder="Szukaj roli..." />
+
+    <div class="roles-section">
+      <h2>Crewmate Roles</h2>
+      <ul class="role-list">
+        <li>Detective - Moze nacisnac guzik na jednym crewmate i dostaje alert w momencie gdy ten crewmate umrze</li>
+        <li>Haunter - Jezeli jako martwy crewmate zrobisz wszystkie taski to reszta crewmateów wie kim sa impostorzy</li>
+        <li>Investigator - Widzi slady butów graczy</li>
+        <li>Mystic - dostaje alarm w momencie gdy ktos umrze</li>
+        <li>Seer - Co jakis czas moze sprawdzic jaka role ma gracz obok niego</li>
+        <li>Snitch - Po ukończeniu tasków widzi kto jest impostorem</li>
+        <li>Spy - Widzi wiecej informacji na vitalsach i na mapce (czas od smierci etc)</li>
+        <li>Tracker - Śledzi wybranego gracza podczas rundy (pojawia sie strzalka gdzie jest jakis gracz)</li>
+        <li>Trapper - Moze klasc pulapki na mapie. Moze zastawic trapy na ventach etc i dostaje powiadomienie jezeli ktos wpadnie w pulapke</li>
+        <li>Sheriff - Moze zabijac graczy. Jezeli zabije impostora to git, a jezeli zabije crewmate to umiera i sherrif i gracz.</li>
+        <li>Veteran - Moze odpalic na siebie alert raz na mecz. Jezeli ktos postara sie go zabic to morderca umiera.</li>
+        <li>Vigilante - Moze zabijac podczas meetingow. Jezeli odgadnie kto jest impostorem to moze go zabic. Jezeli trafi zle to sam umiera. Odpowiednik Assassina od impostorow.</li>
+        <li>Altruist - Jezeli znajdzie martwe cialo na mapie to moze sie poswiecic i wskrzesic crewmate w zamian za swoje zycie. Wskrzeszony crewmate moze wtedy dac znac kto go zabil.</li>
+        <li>Medic - Moze dac jednemu graczowi shielda i odpornosc na jedno usilowanie zabojstwa</li>
+        <li>Engineer - Moze ventować niczym impostor</li>
+        <li>Imitator - Może naśladować zmarłych członków załogi. Podczas spotkań naśladowca może wybrać, kogo będzie naśladować w następnej rundzie. Imitator może użyć każdego z martwych graczy tyle razy, ile zechce. Należy zauważyć, że Imitator nie może naśladować wszystkich ról załogi.</li>
+        <li>Mayor - Moze glosowac wiele razy w trakcie jednej rundy</li>
+        <li>Medium - Widzi duchy (martwych graczy) ktorzy moga go nakierowaac na to kto jest impostorem</li>
+        <li>Swapper - Podczas glosowania moze zamienic graczy miejscami</li>
+        <li>Time Lord - Moze nacisnac guzik ktory cofa czas.</li>
+        <li>Transporter - Moze zamienic miejscami lokacje 2 wybranych graczy</li>
+      </ul>
+    </div>
+
+    <div class="roles-section">
+      <h2>Neutral Roles</h2>
+      <ul class="role-list">
+        <li>Amnesiac - Nie ma żadnego zadania. Nie ma ani tasków ani nie może zabijać, ale widzi role zmarłych graczy i może się nimi podzielić podczas głosowania</li>
+        <li>Guardian Angel - Musi bronić gracza, którego mecz mu wylosuje. Do tego dostosowuje swoją rolę do tego gracza. Jeżeli gra wylosuje Jestera to Guardian Angel staje się też Jesterem i muszą się opiekować sobą niczym Loversi</li>
+        <li>Survivor - Jedyny co musi zrobić to przeżyć xD Zjebana jakaś rola</li>
+        <li>Executioner - Na początku gry ma cel, który musi wyeliminować podczas głosowania. Jeżeli wygłosują daną osobę to Executioner wygrywa solo grę. Jeżeli cel zginie poprzez impostora to Executioner zmienia się w normalnego crewmate'a</li>
+        <li>Jester - Jego celem jest trollowanie i bycie wygłosowanym. Jeżeli wygłosują Jester'a to każdy oprócz Jester'a przegrywa, a Jester wygrywa</li>
+        <li>Phantom - ma fajną custom rolę i customowe warunki wygrania. Jeżeli zostaną zabici, staje się pół-duchem. Jeżeli jako pół-duch nie dasz się znowu zabić i ukończysz wszystkie taski to wygrywasz solo</li>
+        <li>Arsonist - Podpalacz. Co 30 sekund możesz oblać benzyną dowolnego gracza (tylko Arsonist to widzi). Po oblaniu każdego gracza wygrywasz grę. Jego celem jest przedłużanie gry na tyle długo, żeby zdążył oblacić wszystkich</li>
+        <li>Juggernaut - Specjalną umiejętnością Juggernauta jest to, że czas odnowienia zabójstwa skraca się z każdym zabójstwem. Teoretycznie oznacza to, że Juggernaut może mieć czas odnowienia zabójstwa równy 0 sekund! Juggernaut jest również ukrytą rolą, co oznacza, że pojawia się losowo i nie może być przełączany procentowo, jak inne role. Juggernaut musi być ostatnim żywym zabójcą, aby wygrać grę.</li>
+        <li>Plaguebearer - WAYTOODANK. Ma umiejętność, która zaraża innego gracza. W momencie gdy jesteś zarażony, możesz oddać zarazę innej osobie, w momencie kiedy każda osoba będzie zarażona, Plaguebearer zamienia się w nieśmiertelną postać, która zabija każdego. Nawet Lover nie może go zabić. Jedyny sposób na pozbycie się Plaguebearera to poprzez wygłosowanie. Plaguebearer musi zabić każdego killera (impostora, sheriffa itp.), aby wygrać grę</li>
+        <li>The Glitch - Impostor na sterydach. Ma za zadanie zabić zarówno crewmate'ów, jak i impostorów. Ma mniejszy kill cooldown i może się zamieniać w innych graczy</li>
+        <li>Werewolf - Rola z customowym wymogiem na zwycięstwo. Mają kill button, ale nie mogą go używać póki nie są "Wkurwieni", ale za to mają bardzo krótki kill cooldown (10 sekund). Ich zadaniem jest wyeliminować innych killerów (impostora, sheriffa, glitcha), aby wygrać</li>
+      </ul>
+    </div>
+
+    <div class="roles-section">
+      <h2>Impostor Roles</h2>
+      <ul class="role-list">
+        <li>Escapist - może teleportować się w inne miejsce. Raz na rundę Escapist może oznaczyć miejsce, do którego może uciec w dalszej części rundy.</li>
+        <li>Grenadier - Jako impostor możesz rzucać smoke grenade, niczym w CS</li>
+        <li>Morphling - Jako impostor możesz zamieniać się w wybranego gracza na krótki czas</li>
+        <li>Swooper - Jako impostor możesz tymczasowo stać się niewidzialny</li>
+        <li>Poisoner - Jako impostor możesz zarazić trucizną innego gracza zamiast go zabijać. Gracz umiera na początku kolejnego głosowania albo po określonym czasie</li>
+        <li>Bomber - który może podkładać bomby zamiast zabijać. Po podłożeniu bomby zostanie ona zdetonowana w określonym czasie zgodnie z ustawieniami. Gdy bomba wybuchnie, zabije wszystkich członków załogi (i oszustów!) w jej promieniu.</li>
+        <li>Traitor - Jeżeli 2 impostorów umrze stosunkowo szybko, jeden crewmate staje się Traitorem, czyli zdrajcą. Nie ma dodatkowych umiejętności impostorów. Jego zadaniem jest dokończyć grę i zabić resztę crewmate jako 3ci, ostatni żywy impostor</li>
+        <li>Blackmailer - Jako impostor możesz uciszyć jednego gracza podczas spotkania</li>
+        <li>Janitor - Jako impostor możesz sprzątać ciała z mapy. Ta umiejętność ma ten sam cooldown co kill, więc zwykle jedna osoba zabija, a janitor sprząta</li>
+        <li>Miner - Jako impostor możesz tworzyć nowe venty</li>
+        <li>Undertaker - Jako impostor możesz brać i przerzucać ciała w inne miejsce</li> 
+        <li>Assassin - Istnieje szansa, że jeden impostor otrzyma dodatkową umiejętność bycia Assasinem. Ma możliwość zabicia kogoś podczas głosowania, jeżeli odgadnie jego rolę. Jeżeli zgadnie źle, to sam umiera</li>
+      </ul>
+    </div>
+
+    <div class="roles-section">
+      <h2>Modifiers</h2>
+      <ul class="role-list">
+        <li>Bait - Zabicie przynęty sprawia, że zabójca sam się zgłasza.</li>
+        <li>Blind - Przycisk reportu niewidomego nie świeci.</li>
+        <li>Diseased - Zabicie chorego trzykrotnie wydłuża czas odnowienia zabójstwa.</li>
+        <li>Multitasker - Zadania Multitaskera są przejrzyste.</li>
+        <li>Torch - Widzenie tej roli nie zmniejsza się, gdy światła są sabotowane.</li>
+        <li>Button Barry - ma możliwość zwołania spotkania z dowolnego miejsca na mapie, nawet podczas sabotażu. Ma tyle samo spotkań, co zwykły gracz.</li>
+        <li>Flash - Porusza się z dwukrotnie większą prędkością niż zwykły gracz.</li>
+        <li>Giant - Jest gruby i ma zmniejszoną prędkość chodzenia.</li>
+        <li>Radar - wie gdzie znajduje się najbliższy gracz.</li>
+        <li>Lovers - Kochankowie to dwóch graczy, którzy są ze sobą połączeni. Ci dwaj gracze są wybierani losowo spośród członków załogi i oszustów. Ich głównym celem jest wspólne utrzymanie się przy życiu. Jeśli oboje znajdą się wśród 3 ostatnich graczy, wygrywają. Aby to zrobić, uzyskują dostęp do prywatnego czatu, widocznego tylko dla nich między spotkaniami. Mogą jednak również wygrać ze swoją drużyną, dlatego kochankowie nie znają roli drugiego kochanka.</li>
+        <li>Sleuth - Zdobywa wiedzę, zgłaszając zwłoki. Podczas spotkań Detektyw widzi role wszystkich graczy, </li>
+        <li>Tiebreaker - Jeśli w którymkolwiek głosowaniu padnie remis, głos Tiebreakera przejdzie. Jeśli głosowali na innego gracza, zostaną przegłosowani.</li>
+        <li>Disperser - Posiada jednorazową zdolność wysyłania wszystkich graczy do losowego otworu wentylacyjnego. Dotyczy to również szybów górniczych. Nie pojawia się na statku powietrznym ani w zanurzeniu.</li>
+        <li>Double Shot - Otrzymuje dodatkowe życie podczas zabójstwa. Gdy wykorzysta swoje życie, zostanie zasygnalizowany czerwonym błyskiem i nie mogą już odgadnąć osoby, którą źle odgadli, przez resztę spotkania.</li>
+        <li>Underdog - Underdog to Impostor z wydłużonym czasem odnowienia zabójstw. Kiedy jest jedynym pozostałym Impostorem, jego czas odnowienia zabójstw zostanie skrócony.</li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <p>2023 | Strona stworzona przez <a style="color: #fff;" href="https://discord.com/users/909500036575023135">ksaszu#7469</a> - Są błędy pisz!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+/* styles.css */
+body {
+    background-color: #1f1f1f;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .roles-section {
+    margin-bottom: 30px;
+  }
+  
+  .role-list li {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2f2f2f;
+    list-style-type: none; /* Usunięcie kropek */
+  }
+  
+  #roleSearch {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #2f2f2f;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
+  
+  .footer {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
